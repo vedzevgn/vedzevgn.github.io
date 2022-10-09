@@ -807,7 +807,7 @@ input {
 	}
 .mailBox input{
 	height: 60px;
-	width: calc(100% - 103px);
+	width: calc(100% - 106px);
 	background-color: #f2f2f2;
 	border-radius: 22px;
 	padding-left: 20px;
@@ -836,8 +836,8 @@ input {
 .mailDone{
 	background-color: #f2f2f2;
 	border-radius: 26px;
-	width: 60px;
-	height: 100%;
+	width: 62px;
+	height: 62px;
 	float: left;
 	margin-left: 10px;
 }
