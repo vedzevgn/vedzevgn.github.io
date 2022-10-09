@@ -726,7 +726,7 @@ input {
 }
 
 .adressBox{
-	height: 190px;
+	height: 160px;
 	width: calc(50% - 30px);
 	margin-left: 20px;
 	margin-bottom: 20px;
@@ -737,11 +737,11 @@ input {
 
 @media screen and (max-width: 980px) {
 	.adressBox{
-	height: 190px;
+	height: 160px;
 	width: calc(100% - 40px);
 	margin-left: 20px;
 	margin-bottom: 20px;
-	border-radius: 95px;
+	border-radius: 80px;
 	float: left;
 	background-color: white;
 }
@@ -751,9 +751,9 @@ input {
 .adressPh{
 	margin-top: 20px;
 	margin-left: 20px;
-	height: 150px;
-	width: 150px;
-	border-radius: 75px;
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
 	float: left;
 	margin-right: 20px;
 }
@@ -779,7 +779,6 @@ input {
 	float: left;
 	color: black;
 	margin-top: 10px;
-	padding-left: 40px;
 }
 .moreButton p{
 	font-family: 'Montserrat', sans-serif;
