@@ -461,11 +461,17 @@ a{
 	#mapBanner{
 		background-image: url(./banners/mapSmallBanner.jpg);
 	}
+	#qrBanner{
+		background-image: url(./banners/qrSmallBanner.jpg);
+	}
 }
 
 @media screen and (min-width: 521px) {
 	#mapBanner{
 		background-image: url(./pictures/mapBanner1.png);
+	}
+	#qrBanner{
+		background-image: url(./pictures/qr.jpg)
 	}
 }
 
@@ -801,10 +807,11 @@ input {
 	}
 .mailBox input{
 	height: 60px;
-	width: calc(100% - 92px);
+	width: calc(100% - 103px);
 	background-color: #f2f2f2;
 	border-radius: 22px;
 	padding-left: 20px;
+	padding-right: 10px;
 	font-size: 18px;
 	float: left;
 }
