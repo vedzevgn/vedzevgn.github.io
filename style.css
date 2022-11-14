@@ -855,12 +855,33 @@ input {
 	opacity: 0.8;
 	}
 
+@media screen and (min-width: 521px) {
 .bigBanner{
 	width: 100vw;
 	height: calc(100vw / 2);
 	background-size: cover;
 	margin-top: 60px;
 }
+
+}
+@media screen and (max-width: 520px) {
+.bigBanner{
+	width: 100vw;
+	height: calc(100vw / 0.56);
+	background-size: cover;
+	margin-top: 60px;
+}
+#qr1{
+	background-image: url(./banners/qr1m.jpg) !important
+}
+#qr2{
+	background-image: url(./banners/qr2m.jpg) !important
+}
+#qr3{
+	background-image: url(./banners/qr3m.jpg) !important
+}
+}
+
 
 footer{
 	padding: 20px 20px 20px 20px;
