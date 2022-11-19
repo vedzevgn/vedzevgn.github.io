@@ -67,7 +67,7 @@ a{
 
 #bigMenu{
 	opacity: 0;
-	transition: .3s;
+	transition: .4s;
 	visibility: hidden;
 	position: fixed;
 	z-index: 10;
@@ -76,11 +76,19 @@ a{
 	width: 100vw;
 }
 
+.menuIconA{
+	height: 26px;
+	margin-top: 27px;
+	float: left;
+	margin-left: 20px;
+}
+
 .bigMenuButton p{
-	margin-left: 25px;
+	margin-left: 20px;
 	margin-top: 25px;
   font-family: 'Roboto Slab', serif;
   font-size: 22px;
+  float: left;
 }
 .bigMenuButton{
 	height: 80px;

@@ -22,6 +22,33 @@
 			<a href = "">Дополнительно</a>
 		</div>
 	</header>
+	<div id="bigMenu">
+		<a href="index.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/home.png"><p>Главная</p></div></a>
+		<a href="map.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/map.png"><p>Карта</p></div></a>
+		<a href="all.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/articles.png"><p>Все статьи</p></div></a>
+		<a href="qr.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/qr.png"><p>QR</p></div></a>
+		<a href="faq.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/faq.png"><p>Частые вопросы</p></div></a>
+	</div>
+	<script>
+		const bigMenu = document.getElementById("bigMenu");
+		const headBack = document.getElementById("headBack");
+		let isVisible = false;
+
+		document.getElementById("menuButton").onclick = function() {
+  	if(isVisible == true){
+  		headBack.style.height = "70px";
+  		bigMenu.style.opacity = "0";
+  		bigMenu.style.visibility = "hidden"
+  	}
+  	if(isVisible == false){
+  		headBack.style.height = "100vh";
+  		bigMenu.style.opacity = "1";
+  		bigMenu.style.visibility = "visible"
+  	}
+  	isVisible = !isVisible
+
+		}
+  </script>
 	<div class="campusHead"><img class="campusHeadPh" src="kronv.jpg"></div>
 	<div class="fullContent">
 		<p>
