@@ -426,8 +426,8 @@ a{
 .fullPhoto{
 	margin-left: -40px;
 	margin-top: -40px;
-	height: 50vw !important;
-	width: 100vw !important;
+	height: calc(50vw + 20px) !important;
+	width: calc(100vw + 40px) !important;
 	margin-bottom: 20px;
 	background-color: gray;
 	border-radius: 0px !important;
