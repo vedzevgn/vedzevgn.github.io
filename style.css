@@ -53,15 +53,20 @@ a{
 	visibility: hidden;
 }
 
-
-
-.profile{
-	height: 36px;
-	width: 36px;
-	border-radius: 18px;
-	float: right;
-	margin-left: 60px;
-	margin-top: -6px;
+.search{
+	width: 300px !important;
+	height: 34px !important;
+	margin-top: 0px !important;
+	float: left;
+	margin-top: -6px !important;
+}
+.search img{
+	margin-top: 7px !important;
+	height: 20px !important;
+}
+.search input{
+	font-size: 14px !important;
+	height: calc(100% - 4px) !important;
 }
 }
 
@@ -93,7 +98,8 @@ a{
 	border: none;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
-	margin-left: 14px;
+	color: black;
+	margin-left: 12px;
 	float: left;
 
 }
@@ -113,7 +119,7 @@ a{
 
 .bigMenuButton p{
 	margin-left: 20px;
-	margin-top: 25px;
+	margin-top: 24px;
   font-family: 'Roboto Slab', serif;
   font-size: 22px;
   float: left;
@@ -165,7 +171,7 @@ a{
 	float: left;
 }
 
-	}
+}
 .menu a {
 	margin-left: 20px;
 	font-family: 'Roboto Slab', serif;
@@ -181,7 +187,12 @@ a{
 	margin-left: 20px;
 	float: left;
 }
-	}
+
+.menu .search{
+	visibility: hidden;
+}
+
+}
 
 
 .bannerCover{
@@ -397,7 +408,7 @@ a{
 	border-radius: 10px;
 	float: left;
 	margin-right: 10px;
-	margin-top: 10px;
+	margin-top: 16px;
 }
 .articleUser p{
 	height: 20px;
@@ -406,7 +417,7 @@ a{
 	border-radius: 10px;
 	float: left;
 	margin-right: 10px;
-	margin-top: 10px;
+	margin-top: 16px;
 }
 
 .socialCount{
@@ -418,6 +429,10 @@ a{
 .shortArticleBox .smallTitle{
 	margin: 0;
 	font-family: 'Roboto Slab', serif;
+}
+
+.shortDescription{
+	margin-top: 22px;
 }
 
 @media screen and (min-width: 990px) {
