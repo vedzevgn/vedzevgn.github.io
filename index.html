@@ -23,6 +23,7 @@
 		</div>
 	</header>
 
+	<div id="bigMenuBack" hidden></div> 
 	<div id="bigMenu" hidden>
 		<a href="index.html"><div class="bigMenuButton"><p>Главная</p></div></a>
 		<a href="map.html"><div class="bigMenuButton"><p>Карта</p></div></a>
@@ -33,9 +34,10 @@
 	<script>
     document.getElementById('menuButton').onclick = function() {
       document.getElementById('bigMenu').hidden = !(document.getElementById('bigMenu').hidden);
+      document.getElementById('bigMenuBack').hidden = !(document.getElementById('bigMenuBack').hidden);
     }
   </script>
-  
+
 	<div class="bannerCover">
 	<div class="banner">
 		<div class="bannerContent" id="banner1"><img class="bannerPh" src="./banners/banner1.jpg"></div>

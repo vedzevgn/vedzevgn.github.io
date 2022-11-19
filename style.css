@@ -63,12 +63,24 @@ a{
 }
 }
 
+#bigMenuBack{
+		position: fixed;
+    left: 0;
+    top: 70px;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(12px);
+    background-color: rgba(255,255,255,0.85);
+}
+
 #bigMenu{
 	transition: .3s;
 	position: fixed;
 	z-index: 10;
 	top: 70px;
-	background-color: white;
 	height: calc(100vh - 70px);
 	width: 100vw;
 }
@@ -84,7 +96,7 @@ a{
 	width: calc(100vw - 40px);
 	margin-top: 20px;
 	margin-left: 20px;
-	background-color: #f2f2f2;
+	background-color: rgba(0,0,0,0.07);
 	border-radius: 20px;
 	padding-top: 1px;
 }
