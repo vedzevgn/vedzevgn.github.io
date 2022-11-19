@@ -44,7 +44,7 @@ a{
 	font-family: 'Roboto Slab', serif;
 }
 
-.menuButton{
+#menuButton{
 	height: 26px;
 	width: 26px;
 	margin-top: 26px;
@@ -61,6 +61,32 @@ a{
 	margin-left: 60px;
 	margin-top: -6px;
 }
+}
+
+#bigMenu{
+	transition: .3s;
+	position: fixed;
+	z-index: 10;
+	top: 70px;
+	background-color: white;
+	height: calc(100vh - 70px);
+	width: 100vw;
+}
+
+.bigMenuButton p{
+	margin-left: 25px;
+	margin-top: 25px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 22px;
+}
+.bigMenuButton{
+	height: 80px;
+	width: calc(100vw - 40px);
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #f2f2f2;
+	border-radius: 20px;
+	padding-top: 1px;
 }
 
 
@@ -108,7 +134,7 @@ a{
 	visibility: hidden;
 }
 
-.menuButton{
+#menuButton{
 	height: 26px;
 	width: 26px;
 	margin-top: 22px;

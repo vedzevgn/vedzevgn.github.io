@@ -13,7 +13,7 @@
 <body>
 	<div class="headBack"></div>
 	<header>
-		<img class="menuButton" src="./icons/menu.png">
+		<img id="menuButton" src="./icons/menu.png">
 		<a href="index.html"><img src="logo1.png" class="logo"></a>
 		<div class="menu">
 			<a href = "">Главная</a>
@@ -22,6 +22,20 @@
 			<a href = "">Дополнительно</a>
 		</div>
 	</header>
+
+	<div id="bigMenu" hidden>
+		<a href="index.html"><div class="bigMenuButton"><p>Главная</p></div></a>
+		<a href="map.html"><div class="bigMenuButton"><p>Карта</p></div></a>
+		<a href="all.html"><div class="bigMenuButton"><p>Все статьи</p></div></a>
+		<a href="qr.html"><div class="bigMenuButton"><p>QR</p></div></a>
+		<a href="faq.html"><div class="bigMenuButton"><p>Частые вопросы</p></div></a>
+	</div>
+	<script>
+    document.getElementById('menuButton').onclick = function() {
+      document.getElementById('bigMenu').hidden = !(document.getElementById('bigMenu').hidden);
+    }
+  </script>
+  
 	<div class="bannerCover">
 	<div class="banner">
 		<div class="bannerContent" id="banner1"><img class="bannerPh" src="./banners/banner1.jpg"></div>
