@@ -441,6 +441,7 @@ a{
 	float: left;
 	margin-left: 40px;
 	padding-right: 40px;
+	line-height: 120%;
 }
 
 .fullInfo .articleUser img{
