@@ -301,6 +301,7 @@ a{
 
 .shortSocialBox{
 	height: 30%;
+	width: calc(100% - 20px);
 	padding: 0px 20px 20px 20px;
 	display: block;
 	float: left;
@@ -529,7 +530,7 @@ a{
 	padding: 0px;
 	width: calc(100vw - 80px);
 }
-.shortDate{
+.fullHead .shortDate{
 	float: right !important;
 	margin: 0px;
 }
