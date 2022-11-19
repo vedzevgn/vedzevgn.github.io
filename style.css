@@ -81,6 +81,7 @@ a{
 	top: 70px;
 	height: calc(100vh - 70px);
 	width: 100vw;
+	overflow-y: scroll;
 }
 
 .search{
