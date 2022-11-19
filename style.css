@@ -159,8 +159,8 @@ a{
 
 @media screen and (min-width: 751px) {
 .bannerPh{
-	width: 70%;
-	margin-left: 15%;
+	width: 56%;
+	margin-left: 22%;
 }
 }
 
@@ -343,7 +343,7 @@ a{
 
 .socialCount{
 	float: left;
-	margin: 2px 20px 0px 0px;
+	margin: 2px 0px 0px 0px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -353,6 +353,7 @@ a{
 	font-weight: 800;
 }
 
+@media screen and (min-width: 990px) {
 .fullHead{
 	margin-top: 60px;
 	background-color: #f2f2f2;
@@ -362,14 +363,6 @@ a{
 	padding-right: 50px;
 }
 
-.fullContent{
-	margin-left: 10%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	height: fit-content;
-	width: 80%;
-	background-color: white;
-}
 
 .fullPhoto{
 	height: 300px;
@@ -417,6 +410,85 @@ a{
 	float: left;
 	height: 20px;
 }
+}
+
+@media screen and (max-width: 989px) {
+.fullHead{
+	margin-top: 70px;
+	background-color: #f2f2f2;
+	height: auto;
+	float: left;
+	padding:  40px 40px 40px 40px;
+	margin-bottom: 40px;
+}
+
+
+.fullPhoto{
+	height: calc(50vw - 40px);
+	width: calc(100vw - 80px);
+	margin-bottom: 20px;
+	background-color: gray;
+	border-radius: 20px;
+	background-size: cover;
+	background-position: center;
+	float: left;
+}
+
+.fullInfo{
+	height: calc(100% - 20px);
+}
+
+.bigTitle{
+	font-family: 'Roboto Slab', serif;
+	font-size: 28px;
+	margin-top: 0px;
+	margin-bottom: 4px;
+	float: left;
+}
+
+.fullInfo .articleUser img{
+	height: 30px;
+	border-radius: 15px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.fullInfo .articleUser p{
+	font-family: 'Montserrat', sans-serif;
+	height: 20px;
+	font-size: 16px;
+	opacity: .8;
+	border-radius: 10px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 14px;
+}
+
+.shortSocialBox{
+	display: table;
+	float: left;
+	height: 20px;
+	margin-top: 20px !important;
+	padding: 0px;
+	width: calc(100vw - 80px);
+}
+.shortDate{
+	float: right !important;
+	margin: 0px;
+}
+
+}
+
+.fullContent{
+	margin-left: 10%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: fit-content;
+	width: 80%;
+	background-color: white;
+}
+
 
 .fullContent p{
 	max-width: 100%;
@@ -486,7 +558,6 @@ a{
 .commentsBox{
 	background-color: #f2f2f2;
 	height: auto;
-	width: 80%;
 	border-radius: 26px;
 	margin-left: 10%;
 	padding: 20px 20px 20px 20px;
@@ -880,6 +951,15 @@ input {
 #qr3{
 	background-image: url(./banners/qr3m.jpg) !important
 }
+}
+
+.campusHead{
+	width: 100%;
+	height: calc(100vw * 0.34);
+	margin-top: 60px;
+}
+.campusHeadPh{
+	width: 100%;
 }
 
 
