@@ -440,6 +440,7 @@ a{
 	margin-bottom: 4px;
 	float: left;
 	margin-left: 40px;
+	padding-right: 40px;
 }
 
 .fullInfo .articleUser img{
@@ -458,6 +459,10 @@ a{
 	padding: 0px;
 	width: calc(100vw - 80px);
 	margin-left: 40px;
+}
+
+.fullContent p{
+	font-size: 18px !important;
 }
 }
 
