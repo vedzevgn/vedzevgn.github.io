@@ -71,6 +71,15 @@ a{
 }
 
 
+#histLogo{
+	height: 40px;
+	margin-top: 80px;
+	margin-left: 40px;
+	margin-bottom: 6px;
+}
+#allContent{
+	margin-top: 0px !important;
+}
 
 #bigMenu{
 	opacity: 0;
