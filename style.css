@@ -71,12 +71,6 @@ a{
 }
 
 
-#histLogo{
-	height: 40px;
-	margin-top: 80px;
-	margin-left: 40px;
-	margin-bottom: 6px;
-}
 #allContent{
 	margin-top: 0px !important;
 }
@@ -267,6 +261,13 @@ a{
 	color: black;
 	margin: 0px 0px 20px 40px;
 }
+#histLogo{
+	height: 40px;
+	margin-top: 80px;
+	margin-left: 40px;
+	margin-bottom: 6px;
+}
+
 }
 @media screen and (max-width: 520px) {
 .title{
@@ -274,6 +275,13 @@ a{
 	font-size: 24px;
 	color: black;
 	margin: 0px 0px 20px 20px;
+}
+
+#histLogo{
+	height: 30px;
+	margin-top: 80px;
+	margin-left: 20px;
+	margin-bottom: 6px;
 }
 }
 
