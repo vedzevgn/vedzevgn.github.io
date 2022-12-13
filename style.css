@@ -14,6 +14,185 @@ a{
 	color: black;
 }
 
+
+.carousel {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  align-items: center;
+  font-family: Arial;
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+
+
+@media screen and (min-width: 751px){
+
+  .carousel__list {
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 220px;
+    justify-content: center;
+    perspective: 300px;
+    padding-inline-start: 0px !important;
+  }
+  
+  .carousel__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0px;
+    width: 50vw;
+    height: calc(50vw / 2.7);
+    position: absolute;
+    transition: all .4s ease-in-out;
+}
+    .carousel__item:nth-child(1) {
+      background-image: url(./banners/banner1.jpg);
+      background-size: cover;
+    }
+    .carousel__item:nth-child(2) {
+      background-image: url(./banners/banner2.png);
+      background-size: cover;
+    }
+    .carousel__item:nth-child(3) {
+      background-image: url(./banners/banner3.png);
+      background-size: cover;
+    }
+    .carousel__item:nth-child(4) {
+      background-image: url(./banners/banner4.png);
+      background-size: cover;
+    }
+    .carousel__item:nth-child(5) {
+      background-image: url(./banners/banner5.png);
+      background-size: cover;
+    }
+    
+    .carousel__item[data-pos="0"] {
+      z-index: 5;
+    }
+    
+    .carousel__item[data-pos="-1"],
+    .carousel__item[data-pos="1"] {
+      opacity: 0.6;
+      filter: blur(2px) grayscale(10%);
+    }
+    
+    .carousel__item[data-pos="-1"] {
+      transform: translateX(-40%) scale(.9);
+      z-index: 4;
+    }
+    
+    .carousel__item[data-pos="1"] {
+      transform: translateX(40%) scale(.9);
+      z-index: 4;
+    }
+    
+    .carousel__item[data-pos="-2"],
+    .carousel__item[data-pos="2"] {
+      opacity: 0.3;
+      filter: blur(5px) grayscale(20%);
+    }
+    
+    .carousel__item[data-pos="-2"] {
+      transform: translateX(-70%) scale(.8);
+      z-index: 3;
+    }
+    
+    .carousel__item[data-pos="2"] {
+      transform: translateX(70%) scale(.8);
+      z-index: 3;
+    }
+  }
+
+@media screen and (max-width: 750px){
+
+  .carousel__list {
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 220px;
+    justify-content: center;
+    perspective: 300px;
+    padding-inline-start: 0px !important;
+  }
+  
+  .carousel__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0px;
+    width: 90vw;
+    height: calc(90vw / 2.7);
+    position: absolute;
+    transition: all .4s ease-in-out;
+}
+    .carousel__item:nth-child(1) {
+      background-image: url(./banners/banner1.jpg);
+      background-size: cover;
+    }
+    .carousel__item:nth-child(2) {
+      background-image: url(./banners/banner2.png);
+      background-size: cover;
+    }
+    .carousel__item:nth-child(3) {
+      background-image: url(./banners/banner3.png);
+      background-size: cover;
+    }
+    .carousel__item:nth-child(4) {
+      background-image: url(./banners/banner4.png);
+      background-size: cover;
+    }
+    .carousel__item:nth-child(5) {
+      background-image: url(./banners/banner5.png);
+      background-size: cover;
+    }
+    
+    .carousel__item[data-pos="0"] {
+      z-index: 5;
+    }
+    
+    .carousel__item[data-pos="-1"],
+    .carousel__item[data-pos="1"] {
+      opacity: 0.6;
+      filter: blur(2px) grayscale(10%);
+    }
+    
+    .carousel__item[data-pos="-1"] {
+      transform: translateX(-40%) scale(.9);
+      z-index: 4;
+    }
+    
+    .carousel__item[data-pos="1"] {
+      transform: translateX(40%) scale(.9);
+      z-index: 4;
+    }
+    
+    .carousel__item[data-pos="-2"],
+    .carousel__item[data-pos="2"] {
+      opacity: 0.3;
+      filter: blur(5px) grayscale(20%);
+    }
+    
+    .carousel__item[data-pos="-2"] {
+      transform: translateX(-70%) scale(.8);
+      z-index: 3;
+    }
+    
+    .carousel__item[data-pos="2"] {
+      transform: translateX(70%) scale(.8);
+      z-index: 3;
+    }
+  }
+
+
 @media screen and (min-width: 1293px) {
 #headBack{
 	position: fixed;
@@ -741,6 +920,14 @@ input {
 	border: 0px;
 }
 
+.loadMap{
+	background-image: url(./pictures/fullMap1.jpg);
+	animation: ops 1.6s;
+	width: 100vw;
+	height: calc(100vw * 1.7 / 3);
+	background-size: no-repeat;
+	background-position: center;
+}
 
 .map {
 	background-image: url(./pictures/fullMap1.jpg);
