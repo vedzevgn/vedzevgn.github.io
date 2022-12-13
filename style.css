@@ -921,7 +921,7 @@ input {
 }
 
 .loadMap{
-	background-image: url(./pictures/fullMap1.jpg);
+	background-image: url(./icons/load.gif);
 	animation: ops 1.6s;
 	width: 100vw;
 	height: calc(100vw * 1.7 / 3);
