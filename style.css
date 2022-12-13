@@ -920,15 +920,6 @@ input {
 	border: 0px;
 }
 
-.loadMap{
-	background-image: url(./icons/load.gif);
-	animation: ops 1.6s;
-	width: 100vw;
-	height: calc(100vw * 1.7 / 3);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 .map {
 	background-image: url(./pictures/fullMap1.jpg);
 	animation: ops 1.6s;
@@ -1028,15 +1019,7 @@ input {
 }
 
 @media screen and (max-width: 750px) {
-.loadMap{
-	background-image: url(./icons/load.gif);
-	animation: ops 1.6s;
-	width: 100vw;
-	height: calc(100vw * 2.53 / 1.07);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-	
+
 .map {
 	animation: opsM 1.6s;
 	background-image: url(./pictures/mapMobile.jpg);
@@ -1445,3 +1428,16 @@ footer p{
 		margin-top: 43%;
 	}
 }
+
+@keyframes loadOp{
+  0%{
+  	opacity: 0;
+  }
+  70%{
+  	opacity: 0;
+  }
+  100%{
+  	opacity: 1;
+  }
+
+	}
