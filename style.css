@@ -1148,6 +1148,21 @@ input {
 	background-color: white;
 }
 
+.fullAdressB{
+	font-size: 14px !important;
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 470px) {
+
+	.adressInfo{
+	height: 100%;
+	padding-top: 42px !important;
+  }
+
+	}
+
+
 @media screen and (max-width: 980px) {
 	.adressBox{
 	height: 160px;
@@ -1173,7 +1188,7 @@ input {
 
 .adressInfo{
 	height: 100%;
-	padding-top: 32px;
+	padding-top: 54px;
 }
 
 .adressInfo p{
