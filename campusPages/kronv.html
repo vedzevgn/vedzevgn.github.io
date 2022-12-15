@@ -66,10 +66,24 @@
 	Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</p>
 	</div>
-	<div class="commentsBox">
-		<img class="socialIcon" src="../icons/heart.png">
-		<p class="socialCount">270</p>
+	<div id="commentsBox" onclick="setLike()">
+		<img class="socialIcon" id="likeImg" src="./icons/heart.png">
+		<p class="socialCount" id="likes">270</p>
 	</div>
+
+		<script>
+		const likeButton = document.getElementById("commentsBox");
+		const likePic = document.getElementById("likeImg");
+		const likesCount = document.getElementById("likes");
+
+
+		function setLike() {
+			likeButton.style.backgroundColor="#FFD4C6";
+			likePic.src="./icons/heartFull.png";
+			likesCount.style.color="#FF634D";
+		}
+
+  </script>
 	<footer>
 		<p>Вёрстка и дизайн - Башаримов Евгений, back-end - Булко Егор</p>
 		<p>Университет ИТМО, 2022</p>
