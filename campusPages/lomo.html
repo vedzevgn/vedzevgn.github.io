@@ -67,7 +67,7 @@
 	</p>
 	</div>
 	<div id="commentsBox" onclick="setLike()">
-		<img class="socialIcon" id="likeImg" src="./icons/heart.png">
+		<img class="socialIcon" id="likeImg" src="../icons/heart.png">
 		<p class="socialCount" id="likes">270</p>
 	</div>
 
@@ -75,12 +75,25 @@
 		const likeButton = document.getElementById("commentsBox");
 		const likePic = document.getElementById("likeImg");
 		const likesCount = document.getElementById("likes");
+		var isLiked = false;
 
 
 		function setLike() {
-			likeButton.style.backgroundColor="#FFD4C6";
-			likePic.src="../icons/heartFull.png";
-			likesCount.style.color="#FF634D";
+			if (isLiked == false){
+				likeButton.style.backgroundColor="#FFD4C6";
+				likePic.src="../icons/heartFull.png";
+				likesCount.style.color="#FF634D";
+				isLiked = true;
+				return('');
+			}
+			if (isLiked == true){
+				likeButton.style.backgroundColor="#f2f2f2";
+				likePic.src="../icons/heart.png";
+				likesCount.style.color="black";
+				isLiked = false;
+				return('');
+			}
+			
 		}
 
   </script>
