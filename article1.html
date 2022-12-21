@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+	<title>История ИТМО</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="headBack"></div>
+	<header>
+		<a href="index.html"><img src="logo1.png" class="logo"></a>
+		<img id="menuButton" src="../icons/menu.png">
+		<div class="menu">
+			<div class="search"><img src="../icons/search.png"><input type="text" placeholder="Поиск по статьям..."></div>
+			<a href = "../index.html">Главная</a>
+			<a href = "../all.html">Все статьи</a>
+			<a href = "../map.html">Карта</a>
+			<a href = "../qr.html">QR</a>
+			<a href = "../faq.html">Частые вопросы</a>
+		</div>
+	</header>
+	<div id="bigMenu">
+		<div class="search"><img src="../icons/search.png"><input type="text" placeholder="Поиск по статьям..."></div>
+		<a href="../index.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/home.png"><p>Главная</p></div></a>
+		<a href="../map.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/map.png"><p>Карта</p></div></a>
+		<a href="../all.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/articles.png"><p>Все статьи</p></div></a>
+		<a href="../qr.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/qr.png"><p>QR</p></div></a>
+		<a href="../faq.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/faq.png"><p>Частые вопросы</p></div></a>
+	</div>
+	<script>
+		const bigMenu = document.getElementById("bigMenu");
+		const headBack = document.getElementById("headBack");
+		const menuButton = document.getElementById("menuButton");
+		let isVisible = false;
+
+		document.getElementById("menuButton").onclick = function() {
+  	if(isVisible == true){
+  		headBack.style.height = "70px";
+  		bigMenu.style.opacity = "0";
+  		bigMenu.style.visibility = "hidden"
+  		menuButton.src='./icons/menu.png';
+  	}
+  	if(isVisible == false){
+  		headBack.style.height = "100vh";
+  		bigMenu.style.opacity = "1";
+  		bigMenu.style.visibility = "visible"
+  		menuButton.src='./icons/close.png';
+  	}
+  	isVisible = !isVisible
+
+		}
+  </script>
+	<div class="fullHead">
+		<div class="fullPhoto" style="background-image: url(./pictures/itmo.jpg);"></div>
+		<div class="fullInfo">
+		<p class="bigTitle">Добро пожаловать на сайт histribution</p>
+		<div class="articleUser">
+		 	<img src="profile.png">
+		 	<p>Евгений Башаримов</p>
+		</div>
+		</div>
+		<div class="shortSocialBox">
+		 		<img class="socialIcon" src="./icons/heart.png">
+		 		<p class="socialCount">270</p>
+		 		<p class="shortDate">21 декабря 2022</p>
+		 </div>
+	</div>
+	<div class="fullContent">
+		<p>
+	Привет! Сегодня мы готовы представить Вам сайт портала истории Университета ИТМО. Данный сайт был разработан как проект на семестр тремя студентами, однако забывать про него мы не собираемся. Переодически здесь будут повляться новые интересные статьи, а функциональность расширяться.<br><br>
+	На данный момент Вы можете полноценно использовать раздел со статьями, интерактивную карту и ставить лайки на статьи :) Кстати, как Вам дизайн, неплох?<br><br>
+	Некоторые функции ещё находятся на стадии разработки, например, поиск по статьям. Также скоро станет актуальным раздел QR, а в каждом корпусе вы сможете увидеть такие QR-коды, для перехода на определённую статью, рассказывающую про историю здания, в котором Вы находитесь.<br><br>
+	Спасибо, что заинтересовались нашей идеей и дочитали это короткое вступление, переходите на Главную и читайте ещё.
+	</p>
+	</div>
+
+	<div id="commentsBox" onclick="setLike()">
+		<img class="socialIcon" id="likeImg" src="./icons/heart.png">
+		<p class="socialCount" id="likes">270</p>
+	</div>
+
+		<script>
+		const likeButton = document.getElementById("commentsBox");
+		const likePic = document.getElementById("likeImg");
+		const likesCount = document.getElementById("likes");
+		var isLiked = false;
+
+
+		function setLike() {
+			if (isLiked == false){
+				likeButton.style.backgroundColor="#FFD4C6";
+				likePic.src="./icons/heartFull.png";
+				likesCount.style.color="#FF634D";
+				isLiked = true;
+				return('');
+			}
+			if (isLiked == true){
+				likeButton.style.backgroundColor="#f2f2f2";
+				likePic.src="./icons/heart.png";
+				likesCount.style.color="black";
+				isLiked = false;
+				return('');
+			}
+			
+		}
+
+  </script>
+
+	<footer>
+		<p>Вёрстка и дизайн - Башаримов Евгений, back-end - Булко Егор</p>
+		<p>Университет ИТМО, 2022</p>
+	</footer>
+</body>

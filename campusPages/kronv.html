@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <head>
 	<title>История ИТМО</title>
 	<meta charset="utf-8">
@@ -25,12 +24,12 @@
 		</div>
 	</header>
 	<div id="bigMenu">
-		<div class="search"><img src="./icons/search.png"><input type="text" placeholder="Поиск по статьям..."></div>
-		<a href="index.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/home.png"><p>Главная</p></div></a>
-		<a href="map.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/map.png"><p>Карта</p></div></a>
-		<a href="all.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/articles.png"><p>Все статьи</p></div></a>
-		<a href="qr.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/qr.png"><p>QR</p></div></a>
-		<a href="faq.html"><div class="bigMenuButton"><img class="menuIconA" src="./icons/faq.png"><p>Частые вопросы</p></div></a>
+		<div class="search"><img src="../icons/search.png"><input type="text" placeholder="Поиск по статьям..."></div>
+		<a href="index.html"><div class="bigMenuButton"><img class="menuIconA" src="../icons/home.png"><p>Главная</p></div></a>
+		<a href="map.html"><div class="bigMenuButton"><img class="menuIconA" src="../icons/map.png"><p>Карта</p></div></a>
+		<a href="all.html"><div class="bigMenuButton"><img class="menuIconA" src="../icons/articles.png"><p>Все статьи</p></div></a>
+		<a href="qr.html"><div class="bigMenuButton"><img class="menuIconA" src="../icons/qr.png"><p>QR</p></div></a>
+		<a href="faq.html"><div class="bigMenuButton"><img class="menuIconA" src="../icons/faq.png"><p>Частые вопросы</p></div></a>
 	</div>
 	<script>
 		const bigMenu = document.getElementById("bigMenu");
@@ -43,28 +42,34 @@
   		headBack.style.height = "70px";
   		bigMenu.style.opacity = "0";
   		bigMenu.style.visibility = "hidden"
-  		menuButton.src='./icons/menu.png';
+  		menuButton.src='../icons/menu.png';
   	}
   	if(isVisible == false){
   		headBack.style.height = "100vh";
   		bigMenu.style.opacity = "1";
   		bigMenu.style.visibility = "visible"
-  		menuButton.src='./icons/close.png';
+  		menuButton.src='../icons/close.png';
   	}
   	isVisible = !isVisible
 
 		}
   </script>
 	<div class="campusHead"><img class="campusHeadPh" src="kronv.jpg"></div>
+	<div class="campArticleUser">
+	<div class="articleUser">
+		<img src="../profile3.png">
+		<p>Иван Ильинский</p>
+	</div>
+	</div>
 	<div class="fullContent">
-		<p>
-	Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
-	Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
-	Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<p>
+	Главный корпус университета ИТМО находится в здании на Кронверкском проспекте, 49 (в советское время — пр. Максима Горького, 49). Это здание было построено в 1910-1914 гг. с использованием элементов архитектуры классицизма. Архитекторами здания были М.М. Перетяткович и М.С. Лялевич. Декорации и внешний вид здания впечатлят любого: первый этаж, украшенный рустами и служащий цоколем для двух верхних, прорезан по фасаду благородными и большими арками застеклённых проёмов, а центральный ризалит - еще более высокой аркой проезда. На уровне двух верхних этажей боковые ризалиты украшены колоннами, несущими треугольные фронтоны, увенчанные скульптурой; посередине сооружения возвышается 4-гранная мощная башня, украшенная куполом.
+	<br>
+	<img class="inArticleImg" src="./images/img2.jpg">
+	<br>
+	Здание, в котором ныне располагается главный корпус университета, было построено на средства городской думы для размещения в нём различных городских учреждений. Отсюда появилось и название здания — 2-й дом городских учреждений. До того, как здание стало главным корпусом университета ИТМО, в нем располагались Петербургский комитет РСДРП, Биржа труда, Высшая профессорская школа и сектор по регулированию организованного набора рабочей силы Леноблисполкома. После Великой Отечественной Войны в здании разместился один из корпусов Ленинградского института точной механики и оптики, а в настоящее время в здании находится главный корпус Национального исследовательского университета ИТМО. Здание включено в Единый государственный реестр объектов культурного наследия (памятников истории и культуры) народов Российской Федерации.
 	</p>
+	<img class="inArticleImg" src="./images/img1.jpg">
 	</div>
 	<div id="commentsBox" onclick="setLike()">
 		<img class="socialIcon" id="likeImg" src="../icons/heart.png">

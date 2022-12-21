@@ -615,6 +615,27 @@ a{
 	float: left;
 	margin-right: 10px;
 	margin-top: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.campArticleUser{
+	margin-left: 10%;
+	margin-top: 24px;
+}
+
+.campArticleUser img{
+	height: 30px;
+	border-radius: 15px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.inArticleImg{
+	width: 100%;
+	border-radius: 10px;
+	margin: 32px 0px 32px 0px;
+
 }
 
 .socialCount{
@@ -633,6 +654,18 @@ a{
 }
 
 @media screen and (min-width: 990px) {
+.campusHead{
+	width: 90%;
+  height: calc(100vw * 0.30);
+  margin-top: 70px;
+  margin-left: 5%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.campusHeadPh{
+	width: 100%;
+}
+
 .fullHead{
 	margin-top: 60px;
 	background-color: #f2f2f2;
@@ -747,6 +780,16 @@ a{
 }
 
 @media screen and (max-width: 989px) {
+.campusHead{
+	width: 100%;
+  height: calc(100vw * 0.30);
+  margin-top: 70px; 
+  overflow: hidden;
+}
+.campusHeadPh{
+	width: 100%;
+}
+
 .fullHead{
 	margin-top: 70px;
 	background-color: #f2f2f2;
@@ -828,6 +871,7 @@ a{
 	max-width: 100%;
 	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
+	text-align: justify !important;
 }
 
 
@@ -1310,14 +1354,7 @@ input {
 }
 }
 
-.campusHead{
-	width: 100%;
-	height: calc(100vw * 0.34);
-	margin-top: 60px;
-}
-.campusHeadPh{
-	width: 100%;
-}
+
 
 
 footer{
