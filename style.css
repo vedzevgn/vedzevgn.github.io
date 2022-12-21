@@ -530,7 +530,22 @@ a{
 }
 }
 
+@media screen and (min-width: 751px){
+	.inArticleImg{
+	width: 550px;
+	border-radius: 10px;
+	margin: 32px 10px 32px 0px;
+
+}
+}
+
 @media screen and (max-width: 750px) {
+.inArticleImg{
+	width: 100%;
+	border-radius: 10px;
+	margin: 32px 0px 32px 0px;
+
+}
 .shortPhoto{
 	height: calc(100vw - 80px);
 	width: calc(100vw - 80px);
@@ -631,12 +646,7 @@ a{
 	margin-top: 10px;
 }
 
-.inArticleImg{
-	width: 100%;
-	border-radius: 10px;
-	margin: 32px 0px 32px 0px;
 
-}
 
 .socialCount{
 	float: left;
@@ -659,7 +669,7 @@ a{
   height: calc(100vw * 0.30);
   margin-top: 70px;
   margin-left: 5%;
-  border-radius: 16px;
+  border-radius: 22px;
   overflow: hidden;
 }
 .campusHeadPh{
